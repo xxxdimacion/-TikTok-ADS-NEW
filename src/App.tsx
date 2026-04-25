@@ -10,7 +10,7 @@ export default function App() {
   const [activeModal, setActiveModal] = useState<'privacy' | 'terms' | null>(null);
 
   const triggerAction = () => {
-    // Вызываем глобальную функцию редиректа в Telegram и отправки события Пикселя из index.html
+    // Вызываем глобальную функцию редиректа в Telegram
     if (typeof (window as any).handleAction === 'function') {
       (window as any).handleAction();
     }
