@@ -53,15 +53,15 @@ export default function App() {
         </main>
 
         {/* Footer Section */}
-        <section className="bg-white text-slate-900 rounded-t-[20px] sm:rounded-t-[40px] py-4 sm:py-6 px-4 sm:px-8 mt-auto relative z-20 w-full flex-shrink-0 border-t-8 border-[#D7FF00]">
+        <section className="bg-black text-slate-300 py-4 sm:py-6 px-4 sm:px-8 mt-auto relative z-20 w-full flex-shrink-0">
           <div className="max-w-7xl mx-auto">
             
             {/* Strict Footer Requirements for Moderation */}
             <div className="text-center">
               <div className="flex flex-row flex-wrap justify-center gap-x-4 gap-y-2 mb-3">
-                <button onClick={() => setActiveModal('privacy')} className="text-slate-500 hover:text-[#0A26C4] font-semibold text-xs transition-colors">Политика конфиденциальности</button>
-                <span className="text-slate-300 text-xs hidden sm:inline">|</span>
-                <button onClick={() => setActiveModal('terms')} className="text-slate-500 hover:text-[#0A26C4] font-semibold text-xs transition-colors">Условия использования</button>
+                <button onClick={() => setActiveModal('privacy')} className="text-slate-500 hover:text-white font-semibold text-xs transition-colors">Политика конфиденциальности</button>
+                <span className="text-slate-700 text-xs hidden sm:inline">|</span>
+                <button onClick={() => setActiveModal('terms')} className="text-slate-500 hover:text-white font-semibold text-xs transition-colors">Условия использования</button>
               </div>
               <div className="text-slate-400 text-[10px] max-w-3xl mx-auto leading-relaxed mt-4 sm:mt-2">
                 <p className="mb-2">© {new Date().getFullYear()} Onchain Analytics. Данный сайт носит исключительно образовательный характер.</p>
